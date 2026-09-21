@@ -24,6 +24,5 @@ public class Pedido {
     private BigDecimal valorTotal;
 
     @ManyToOne 
-
     private Cliente cliente;
 }

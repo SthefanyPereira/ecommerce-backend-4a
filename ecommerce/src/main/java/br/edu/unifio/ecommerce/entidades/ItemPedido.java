@@ -23,7 +23,6 @@ public class ItemPedido {
 
 
     @ManyToOne 
-
     private Pedido pedido;
 
     @ManyToOne 

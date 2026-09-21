@@ -25,6 +25,5 @@ public class Pagamento {
     private String tipo;
 
     @OneToOne 
-
     private Pedido pedido;
 }
