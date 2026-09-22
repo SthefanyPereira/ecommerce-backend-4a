@@ -24,7 +24,15 @@ public class CategoriaRepositorioTests {
 
         assertNotNull(categoria);
         assertEquals("Roupas", categoria.getNome());
-        
+        assertEquals("Vestuário e acessórios", categoria.getDescricao());
+    }
 
+    @Test
+    public void deveListarCategorias() {
+
+        var categorias = categoriaRepositorio.findAll();
+
+        assertNotNull(categorias);
+        assertEquals(5, categorias.size());
     }
 }
